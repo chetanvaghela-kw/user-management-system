@@ -37,7 +37,7 @@ class UserManager {
 	 */
 	public function addUser( array $data ): void {
 		if ( $this->repository->addUser( $data ) ) {
-			//echo "User added successfully!\n";
+			// echo "User added successfully!\n";
 		} else {
 			echo "Failed to add user.\n";
 		}
@@ -86,12 +86,12 @@ class UserManager {
 
 	/**
 	 * Get users from the database.
-     * 
-     * @param int $limit limit the number of users to be displayed.
-     * @param int $offset offset the number of users to be displayed.
+	 *
+	 * @param int $limit limit the number of users to be displayed.
+	 * @param int $offset offset the number of users to be displayed.
 	 */
-	public function getAllUsers(int $limit, int $offset): void {
-		$user = $this->repository->getAllUsers($limit,$offset);
+	public function getAllUsers( int $limit, int $offset ): void {
+		$user = $this->repository->getAllUsers( $limit, $offset );
 		if ( $user ) {
 			print_r( $user );
 		} else {
@@ -99,9 +99,8 @@ class UserManager {
 		}
 	}
 
-    /**
+	/**
 	 * Get users count from the database.
-     * 
 	 */
 	public function getUserCount(): void {
 		$user = $this->repository->getUserCount();
@@ -111,5 +110,4 @@ class UserManager {
 			echo "User not found.\n";
 		}
 	}
-
 }
