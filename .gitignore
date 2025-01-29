@@ -1,0 +1,50 @@
+# Composer dependencies
+/vendor/
+
+# Environment variables and config files
+.env
+/config/config.php
+
+# Node.js (if used for front-end assets)
+/node_modules/
+
+# System files
+.DS_Store
+Thumbs.db
+*.log
+
+# Cache directories
+/cache/
+*.cache
+
+# IDE files
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.vscode/
+
+# Backup files
+*.bak
+*.tmp
+*.swp
+*.orig
+
+# Generated files
+/public/assets/
+*.css.map
+*.js.map
+
+# OS-specific files
+*.lock
+*.DS_Store
+*.directory
+
+# PHPUnit test results
+/phpunit.xml
+/tests/_output/
+
+# Exclude uploaded files (if applicable)
+/uploads/
+
+# Ignore composer.lock if you prefer it not be versioned
+composer.lock
